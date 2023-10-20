@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
+*{
+    margin: 0;
+}
+body{
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.parent{
+    width: 90%;
+    min-height: 1500px;
+    /* background-color: aquamarine; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    /* padding-top: 35em; */
+}
+.child{
+    border-radius: 5px;
+}
+
+/* name section start */
+
+.parent .name-section:nth-child(1){
+    box-shadow: -5px 5px 20px 5px rgb(47, 47, 47);
+    /* background-color: goldenrod; */
+    grid-row-start: 1;
+    grid-row-end: 4;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.name-section .image{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.name-block{
+    color: rgb(255, 255, 255);
+    font-family: 'Archivo Black', sans-serif;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.name-section .image img{
+    width: 100%;
+    /* position: absolute; */
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.name-section .about{
+    color: rgb(89, 89, 89);
+    padding-top: 2em;
+    margin-left: 2.5em;
+    line-height: 2em;
+    font-family: 'Quicksand', sans-serif;
+    font-size: smaller;
+}
+hr.line{
+    border: 0.5px solid rgb(146, 146, 146);
+    width: 95%;
+}
+.name-section .skill{
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 2em;
+}
+.name-section .progress-bar{
+    font-family: 'Cabin', sans-serif;
+    position: relative;
+    margin-top: -17px;
+    padding-left: 2em;
+    margin-bottom: 1em;
+}
+progress{
+    height: 40px;
+    width: 95%;
+}
+.pro-one{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.html-bar{
+    padding-top: 1em;
+}
+.html{
+    top: 60%;
+    left: 50%;
+}
+.strg{
+    padding-top: 90px;
+}
+i{
+    color: rgb(3, 72, 132);
+}
+/* name section end */
+
+
+/* summary start */
+
+.parent .summary:nth-child(2){
+    box-shadow: 10px 5px 20px 5px rgb(97, 97, 97);
+
+    /* background-color: darkseagreen; */
+}
+.summary .summary-head{
+    font-family: 'Roboto', sans-serif;
+    padding: 1em;
+}
+.summary .summary-body .summary-head{
+    padding: 2em;
+}
+.summary .summary-body{
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    text-align: justify;
+}
+.summary .summary-body p{
+    color: rgb(89, 89, 89);
+    padding: 3em;
+    /* padding-left: 2em; */
+    line-height: 30px;
+}
+/* summary end */
+
+
+/* project works start*/
+
+.parent .work-experience:nth-child(3){
+    box-shadow: 10px 5px 20px 5px rgb(97, 97, 97);
+    /* background-color: cornflowerblue; */
+}
+.work-experience .work-head{
+    font-family: 'Roboto', sans-serif;
+    padding: 1em;
+}
+.work-experience .work-body{
+    font-family: 'Roboto', sans-serif;
+}
+.work-experience .work-body .work-body-head{
+    padding: 1em;
+    padding-left: 2em;
+}
+.work-experience .work-body p{
+    color: rgb(89, 89, 89);
+    padding: 1em;
+    padding-left: 2em;
+    line-height: 25px;
+}
+.work-experience .work-body .date{
+    color: rgb(3, 72, 132);
+    padding: 2em;
+    padding-top: 30px;
+    font-size: 15px;
+}
+
+.work-experience .work-body .date span{
+    color: white;
+    background-color: rgb(3, 72, 132);
+    padding: 0.4em;
+    border-radius: 2px;
+}
+.work-experience .work-body .date i{
+    margin-top: 1em;
+    text-align: justify;
+}
+.work-experience .work-body p{
+    padding: 3em;
+}
+.work-experience .work-body hr{
+    width: 95%;
+    margin-left: 1em;
+}
+.work-experience .work-body2{
+    padding-top: 2em;
+}
+/* project works end */
+
+
+/* education start*/
+.parent .education:nth-child(4){
+    /* background-color: aqua; */
+    box-shadow: 10px 5px 20px 5px rgb(97, 97, 97);
+}
+.parent .education .education-head{
+    font-family: 'Roboto', sans-serif;
+    padding: 1em;
+}
+.parent .education .institute-body{
+    font-family: 'Roboto', sans-serif;
+}
+.parent .education .institute-body .institute-body-head{
+    padding-top: 2em;
+    padding: 1em;
+    padding-left: 2em;
+}
+.parent .education .institute-body .date span{
+    color: white;
+    background-color: rgb(3, 72, 132);
+    padding: 0.4em;
+    border-radius: 2px;
+}
+.parent .education .institute-body .date{
+    color: rgb(3, 72, 132);
+    padding: 2em;
+    padding-top: 30px;
+    font-size: 15px;
+}
+
+.parent .education .institute-body .date i{
+    margin-top: 1em;
+}
+.parent .education .institute-body hr{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 95%;
+    margin-left: 1em;
+}
+.parent .education .institute-body p{
+    padding: 1em;
+    padding-left: 2em;
+    line-height: 25px;
+}
+/* education end */
